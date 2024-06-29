@@ -1,9 +1,9 @@
 <svelte:head>
 	<title>T-Gravity</title>
-	<meta name="description" content="t-gravity" />
+	<meta name="description" content="t-gravity info su di noi" />
 </svelte:head>
 
-<h1>Welcome to T-Gravity</h1>
+<h1>About T-Gravity</h1>
 <p>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque mauris arcu, ut blandit
 	metus ornare in. Proin rutrum elementum magna, eget varius elit suscipit et. Curabitur molestie
