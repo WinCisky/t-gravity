@@ -5,7 +5,7 @@
     import Swiper from 'swiper';
     import 'swiper/css';
 
-	const clientId = import.meta.env.VITE_PAYPAL_CLIENT_ID;
+	const clientId = "Aa8zMMxnb1NiwTIbw64BhpgP53K87uw7R3kRqVtSaGkuEgiuY8Qz3oEP2V3A1UQc3rDVrZyD5mATNZsK";
     const backendUrl = "https://t-gravity.deno.dev";
 
 	export let productId;
