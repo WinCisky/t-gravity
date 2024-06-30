@@ -1,13 +1,14 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 
 	$: pathname = $page.url.pathname;
 </script>
 
 <nav>
-	<a href="/" class:active={pathname === '/'}>home</a>
-	<a href="/shop" class:active={pathname === '/shop'}>shop</a>
-	<a href="/about" class:active={pathname === '/about'}>about</a>
+	<a href="{base}/" class:active={pathname === `${base}/`}>home</a>
+	<a href="{base}/shop" class:active={pathname === `${base}/shop`}>shop</a>
+	<a href="{base}/about" class:active={pathname === `${base}/about`}>about</a>
 </nav>
 
 <slot />
