@@ -47,7 +47,8 @@
 
 		try {
 			paypal = await loadScript({
-				clientId: clientId
+				clientId: clientId,
+				currency: 'EUR'
 			});
 		} catch (error) {
 			console.error('failed to load the PayPal JS SDK script', error);
@@ -64,12 +65,13 @@
 									method: 'POST',
 									headers: { 'Content-Type': 'application/json' },
 									body: JSON.stringify({
-										// TODO: add selected variant and proprieties
-										cart: [{ id: productId }]
+										amount: "100.00",
+										cart: [{ id: productId, proprieties: Object.fromEntries(selectedProprieties.entries()) }]
 									})
 								});
 
 								const orderData = await response.json();
+								console.log(orderData);
 
 								if (!orderData.id) {
 									const errorDetail = orderData.details[0];
@@ -125,14 +127,14 @@
 		<div>
             <fieldset>
                 <legend>Variant</legend>
-                {#each variants as variant}
+                {#each variants as variant, i}
                     <div>
                         <input
                             type="radio"
                             id={variant.name}
                             name={variant.name}
                             value={variant.name}
-                            checked={variant.name === 'default'}
+                            checked={i === 0}
                             on:change={() => selectedVariant = variant}
                         />
                         <label for={variant.name}>{variant.name}</label>
@@ -145,15 +147,15 @@
 			{#each proprieties as propriety}
 				<fieldset>
 					<legend>{propriety.name}</legend>
-					{#each propriety.values as prop}
+					{#each propriety.values as prop, i}
 						<div>
 							<input
 								type="radio"
 								id={prop.name}
-								name={prop.name}
+								name={propriety.name}
 								value={prop.name}
-								checked={prop.name === 'default'}
-								on:change={() => selectedProprieties.set(prop.name, prop.name)}
+								checked={i === 0}
+								on:change={() => selectedProprieties.set(propriety.name, prop.value)}
 							/>
 							<label for={prop.name}>{prop.name}</label>
 						</div>

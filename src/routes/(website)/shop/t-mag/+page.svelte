@@ -3,7 +3,7 @@
 
 	import magOneImg1 from '$lib/images/t-mag/image1.png';
 	import magOneImg2 from '$lib/images/t-mag/image2.png';
-	import Product from '../../../components/product.svelte';
+	import Product from '../../../../components/product.svelte';
 
 	const productId = 1;
 	const variants: Propriety[] = [
