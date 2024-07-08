@@ -6,8 +6,11 @@
 	const pb = new PocketBase('https://dev.opentrust.it/');
 
 	async function isAdmin() {
-		// TODO
-		return false;
+		const userId = pb.authStore.model?.id;
+		const admins = await pb.collection('t_gravity_admins').getList(1, 1, {
+			filter: `user.id = "${userId}"`
+		});
+		return admins.totalItems > 0;
 	}
 
 	async function login() {
