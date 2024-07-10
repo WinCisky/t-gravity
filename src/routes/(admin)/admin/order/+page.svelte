@@ -3,11 +3,14 @@
 	import { onMount } from 'svelte';
 
 	const pb = new PocketBase('https://dev.opentrust.it/');
-    export let data;
     let order: ListResult<RecordModel> | null = null;
 
     onMount(async () => {
-        order = await pb.collection('t_gravity_payments').getOne(data.id);
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        if (id) {
+            order = await pb.collection('t_gravity_payments').getOne(id);
+        }
     });
 </script>
 
