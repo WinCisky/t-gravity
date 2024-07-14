@@ -36,5 +36,8 @@
 		"typescript-eslint": "8.0.0-alpha.36",
 		"vite": "^5.3.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2"
+	}
 }
