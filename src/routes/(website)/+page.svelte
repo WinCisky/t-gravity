@@ -21,21 +21,17 @@
 			<div class="flex lg:flex-1">
 				<a href="{base}/" class="-m-1.5 p-1.5">
 					<span class="sr-only">T-Gravity</span>
-					<img
-						class="h-8 w-auto"
-						src={logoAureo}
-						alt=""
-					/>
+					<img class="h-14 w-auto" src={logoAureo} alt="" />
 				</a>
 			</div>
 			<div class="flex">
-				<a href="{base}/shop" class="text-sm font-semibold leading-6 text-gray-900">Negozio</a>
+				<a href="{base}/shop/t-mag" class="text-xl font-semibold leading-6 text-gray-900">T-Mag</a>
 			</div>
 		</nav>
 	</header>
-	<div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+	<div class="relative isolate overflow-hidden bg-gradient-to-b from-sky-100/20 pt-14">
 		<div
-			class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+			class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-sky-600/10 ring-1 ring-sky-50 sm:-mr-80 lg:-mr-96"
 			aria-hidden="true"
 		></div>
 		<div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
@@ -65,26 +61,28 @@
 <div class="bg-white py-24 sm:py-32">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-			<!-- <p class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
+			<!-- <p class="text-base font-semibold leading-7 text-sky-600">Deploy faster</p>
 			<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 				A better workflow
 			</h1> -->
-			<div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base lg:max-w-none lg:grid-cols-2">
+			<div
+				class="mt-10 grid max-w-xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2 text-xl text-gray-900 leading-8 sm:text-lg"
+			>
 				<div>
-					<p class="text-lg leading-8 text-gray-900">
+					<p>
 						Il termine “gravità” deriva dall’aggettivo latino gravis, pesante. La parola viene
 						generalmente ricondotta a situazioni complesse, pesanti appunto, nella vita di tutti i
 						giorni: lavoro, cibo, stress etc. Ci ricorda molte delle azioni che facciamo
 						quotidianamente in ogni momento della giornata.
 					</p>
-					<p class="mt-8 text-lg leading-8 text-gray-900">
+					<p class="mt-8">
 						In realtà, ogni individuo è una massa fisica specifica che esercita una propria forza di
 						gravità. Di conseguenza, molti disturbi e patologie sono causati dal fatto che la parte
 						superiore del nostro corpo aiuta quella inferiore proprio nella lotta contro la gravità.
 					</p>
 				</div>
 				<div>
-					<p class="text-lg leading-8 text-gray-900">
+					<p>
 						Un comune mal di schiena, ad esempio, segnala questo limite, come una spia che si
 						accende quando l’usura dei tessuti è eccessiva. Il problema è il conflitto tra muscoli
 						agonisti e muscoli antagonisti. Se i muscoli antagonisti sono contratti per permettermi
@@ -93,7 +91,7 @@
 						usurano il corpo, a livello articolare, ma anche a livello dell’endotelio dei condotti
 						in cui scorrono i fluidi, che vengono così rallentati.
 					</p>
-					<p class="mt-8 text-lg leading-8 text-gray-900">
+					<p class="mt-8">
 						La tecnica T-Gravity migliora la tua flessibilità del corpo che è una caratteristica
 						importante per la tua forma fisica e per la vita quotidiana di tutti i giorni.
 					</p>
@@ -162,7 +160,7 @@
 				<figure class="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
 					<div class="col-end-1 w-16 lg:row-span-4 lg:w-72">
 						<img
-							class="rounded-xl bg-indigo-50 lg:rounded-3xl"
+							class="rounded-xl bg-sky-50 lg:rounded-3xl"
 							loading="lazy"
 							src={beforeAfter}
 							alt=""
@@ -183,18 +181,27 @@
 	</figure>
 </section>
 
-<div class="bg-white">
-	<div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-		<div class="mx-auto max-w-2xl px-4 lg:max-w-none">
-			<div class="max-w-3xl">
-				<h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-					La Maglietta T-Gravity
-				</h2>
+<div class="overflow-hidden rounded-lg bg-white shadow max-w-6xl m-auto">
+	<div class="px-4 py-5 sm:p-6">
+		<div class="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
+			<div class="sm:col-span-4 lg:col-span-5">
+				<div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+					<img
+						src={photoShirt}
+						alt="Back angled view with bag open and handles to the side."
+						class="object-cover object-center"
+					/>
+				</div>
 			</div>
+			<div class="sm:col-span-8 lg:col-span-7">
+				<h2 class="text-2xl font-bold text-gray-900 sm:pr-12">Maglietta T-Gravity</h2>
 
-			<div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-				<div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-					<div class="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4 text-lg leading-8 text-gray-900">
+				<section aria-labelledby="information-heading" class="mt-3">
+					<h3 id="information-heading" class="sr-only">Product information</h3>
+
+					<div class="mt-6 text-xl text-gray-900 leading-8 sm:text-base">
+						<h4 class="sr-only">Description</h4>
+
 						<p>
 							Abbiamo completamente dimenticato la dimensione invisibile della nostra esistenza che
 							è la più importante, perché in essa risiede il nostro vero potere e il vero
@@ -217,29 +224,32 @@
 							campi plasmatici dell’universo e ne rappresenta un mezzo per accedere ad essi.
 						</p>
 					</div>
-					<div class="flex-auto lg:col-span-7 xl:col-span-8">
-						<div class="rounded-full">
-							<img
-								src={photoShirt}
-								loading="lazy"
-								alt="maglietta t-gravity"
-								class="object-cover object-center max-w-xl rounded-full mx-[10%] w-4/5"
-							/>
-						</div>
+				</section>
+
+				<section aria-labelledby="options-heading" class="mt-6">
+					<h3 id="options-heading" class="sr-only">Product options</h3>
+
+					<div class="mt-6">
+						<a
+							href="{base}/shop/t-mag"
+							type="submit"
+							class="flex w-full items-center justify-center rounded-md border border-transparent bg-sky-600 px-8 py-3 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+							>Acquista
+							</a>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+<div class="relative isolate bg-white pb-32 pt-24 sm:pt-32 mt-12">
 	<div
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
 		aria-hidden="true"
 	>
 		<div
-			class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+			class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-sky-200 to-cyan-200"
 			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
 		></div>
 	</div>
@@ -248,7 +258,7 @@
 		aria-hidden="true"
 	>
 		<div
-			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-sky-200 to-cyan-200 xl:ml-0 xl:mr-[calc(50%-12rem)]"
 			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
 		></div>
 	</div>
