@@ -7,15 +7,27 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+		
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0VWZGBFHK5"></script>
 		<script>
+            function loadAnalytics() {
+                var head = document.getElementsByTagName('head')[0]
+                var script = document.createElement('script')
+                script.type = 'text/javascript';
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-0VWZGBFHK5'
+                head.appendChild(script);
+            };
+            document.addEventListener('DOMContentLoaded', loadAnalytics);
+        </script>
+        
+        <!-- Google tag (gtag.js) -->
+        <script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'G-0VWZGBFHK5');
-		</script>
-		<div style="display: contents">%sveltekit.body%</div>
+        </script>
 	</body>
 </html>
